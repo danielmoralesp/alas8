@@ -49,7 +49,7 @@
     
     <section class="promo section section-on-bg">
         <div class="container text-center">                
-            <h2 class="title">Bienvenido al Lugar de las Citas <span style="color:#47c9af">Off</span>line. <br /> Conoce Personas Reales. <br /> Jueves a las 8pm.</h2>
+            <h2 class="title">Bienvenidos al Lugar de las Citas <span style="color:#47c9af">Off</span>line. <br /> Conoce Personas Reales. <br /> Jueves a las 8pm.</h2>
             <p class="intro">No más "Citas Online", perfiles falsos, fotos irreales, ni tiempo perdido.  <br /> Sin mensajes de texto de ida y vuelta. <br /> Solo citas en lugares reales.</p>
             <p><a class="btn btn-cta btn-cta-primary" href="comenzar">Probar Gratis</a></p>   
             <!--<button type="button" class="play-trigger btn-link " data-toggle="modal" data-target="#modal-video" data-backdrop="static" data-keyboard="false"><i class="fa fa-youtube-play"></i> Watch the video</button>-->
