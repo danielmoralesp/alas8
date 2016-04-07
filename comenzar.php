@@ -48,6 +48,7 @@
 	
 	<?
 	
+	/*
 	// Varios destinatarios
 					$para  = 'prueba@gmail.com' . ', '; // atención a la coma
 					$para .= 'danielmorales1202@gmail.com';
@@ -70,7 +71,26 @@
 
 					// Mail it
 					mail($para, $titulo, $mensaje, $cabeceras);
+	*/
+
+
 	
+		$nombre = 'Daniel Morales';
+		$email = 'danielmorales1202@gmail.com';
+		$subject = 'Entraron al Paso 1';
+		$mensaje = $paso1;
+
+		require "emails/php-mailer/class.phpmailer.php";
+
+		$mail = new PHPMailer;
+		$mail -> Host = "localhost"; //Para proveedores externos, inidicar el mismo aqui. 
+		$mail -> From = "danielmorales@floresymas.com";
+		$mail -> FromName = "FloresyMas";
+		$mail -> Subject = $subject;
+		$mail -> addAddress($email, $nombre);
+		$mail -> MsgHTML($mensaje);
+
+
 
 ?>
 
