@@ -82,6 +82,7 @@
 	<?php
 
 	//EMAILS DE LA NUEVA FORMA, POR MEDIO DE PHPMAILER
+	/*
 		$msg = null;
 			$nombre = 'Daniel Morales';
 			$email = 'danielmorales1202@gmail.com';
@@ -104,7 +105,50 @@
 			$mail -> addAddress($email, $nombre);
 			$mail -> MsgHTML($mensaje);
 			$mail -> IsHTML(true); // Se envia HTML, boleano.
+	*/
 
+			include("emails/php-mailer/class.phpmailer.php");
+			 //include("class.smtp.php"); // es opcional - se llamará desde la clase principal si no se carga
+			 
+			 $mail             = new PHPMailer();
+			 
+			 $body             = $mail->getFile('http://test.alas8.com/emails/Notify/Templates/HTML/Notify1/');
+			 $body             = eregi_replace("[\]",'',$body);
+			 
+			 /*$mail->IsSMTP();
+			 $mail->SMTPAuth   = true;                  // activada la autentificación por SMTP
+			 $mail->SMTPSecure = "ssl";                 // selecciona el prefijo del servidor
+			 $mail->Host       = "smtp.gmail.com";      // selecciona el servidor SMTP, en este caso Gmail
+			 $mail->Port       = 465;                   // selecciona el puerto SMTP
+
+			 $mail->Username   = "yourname@gmail.com";  // usuario de Gmail
+			 $mail->Password   = "password";            // contraseña de Gmail
+			 */
+			 
+			 $mail->Host       = "localhost"; 
+			 $mail->From       = "inquietudes@alas8.com";
+			 $mail->FromName   = "Alas8.com";     // Nombre de la persona que lo envía 
+			 $mail->Subject    = "Entraron al Paso 1"; 
+			 //$mail->AltBody    = "Este es el mensaje que usaremos en caso de no usar html"; // Cuerpo de texto
+			 $mail->WordWrap   = 50; // coloca el ajuste de línea
+			 
+			 $mail->MsgHTML($body);         // Colocaremos el cuerpo del mensaje en html.
+			 
+			 //$mail->AddReplyTo("replyto@yourdomain.com","Webmaster");  //Estableceremos a quien se le tiene que contestar.
+			 
+			 //$mail->AddAttachment("/path/to/file.zip");             // Para colocar un archivo
+			 //$mail->AddAttachment("/path/to/image.jpg", "new.jpg"); // Colocar un archivo o imágen en este caso
+			 
+			 $mail->AddAddress("danielmorales1202@gmail.com","Daniel Morales"); //Colocamos el correo electrónico.
+			 
+			 $mail->IsHTML(true); // Se envia HTML, boleano.
+			 
+			 /*if(!$mail->Send()) {
+			   echo "Mailer Error: " . $mail->ErrorInfo;
+			 } else {
+			   echo "Message has been sent";
+			 }
+			 */
 	?>
 
 
