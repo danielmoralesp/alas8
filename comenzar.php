@@ -86,8 +86,8 @@
 			$nombre = 'Daniel Morales';
 			$email = 'danielmorales1202@gmail.com';
 			$subject = 'Entraron al Paso 1';
-			//$mensaje = $paso1;
-			$mensaje = '<a href="http://test.alas8.com/emails/Notify/Templates/HTML/Notify1/">';
+			$mensaje = $paso1;
+			//$mensaje = '<a href="http://test.alas8.com/emails/Notify/Templates/HTML/Notify1/">';
 
 			require "emails/php-mailer/class.phpmailer.php";
 
