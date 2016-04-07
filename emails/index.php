@@ -3,7 +3,7 @@
 	if(isset($_POST["phpmailer"])){
 		$nombre = htmlspecialchars($_POST["nombre"]);
 		$email = htmlspecialchars($_POST["email"]);
-		$subject = $_POST["subject"];
+		$subject = htmlspecialchars($_POST["subject"]);
 		$mensaje = $_POST["mensaje"];
 		$adjunto = $_FILES["adjunto"];
 
