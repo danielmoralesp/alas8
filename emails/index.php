@@ -3,7 +3,7 @@
 	if(isset($_POST["phpmailer"])){
 		$nombre = htmlspecialchars($_POST["nombre"]);
 		$email = htmlspecialchars($_POST["email"]);
-		$asunto = htmlspecialchars($_POST["asunto"]);
+		$subject = htmlspecialchars($_POST["subject"]);
 		$mensaje = $_POST["mensaje"];
 		$adjunto = $_FILES["adjunto"];
 
@@ -13,7 +13,7 @@
 		$mail -> Host = "localhost"; //Para proveedores externos, inidicar el mismo aqui. 
 		$mail -> From = "danielmorales@floresymas.com";
 		$mail -> FromName = "FloresyMas";
-		$mail -> Subject = $asunto;
+		$mail -> Subject = $subject;
 		$mail -> addAddress($email, $nombre);
 		$mail -> MsgHTML($mensaje);
 
@@ -49,7 +49,7 @@
 				</tr>
 				<tr>
 					<td>Asunto</td>
-					<td><input type="text" name="asunto"></td>
+					<td><input type="text" name="subject"></td>
 				</tr>
 				<tr>
 					<td>Adjuntar Archivo</td>
