@@ -1,9 +1,42 @@
+<?php
+	$msg = null;
+	if(isset($_POST["phpmailer"])){
+		$nombre = htmlspecialchars($_POST["nombre"]);
+		$email = htmlspecialchars($_POST["email"]);
+		$asunto = htmlspecialchars($_POST["asunto"]);
+		$mensaje = $_POST["asunto"];
+		$adjunto = $_FILES["adjunto"];
+
+		requiere "php-mailer/class.phpmailer.php";
+
+		$mail = new PHPMailer;
+		$mail -> Host = "localhost"; //Para proveedores externos, inidicar el mismo aqui. 
+		$mail -> From = "danielmorales@floresymas.com";
+		$mail -> FromName = "FloresyMas";
+		$mail -> Subjet = $asunto;
+		$mail -> addAddress($email, $nombre);
+		$mail -> MsgHTML($mensaje);
+
+		if($adjunto["size"] > 0){
+			$mail -> addAttachment($adjunto["tmp_name"], $adjunto["name"]);
+		}
+		if($mail -> Send()){
+			$msg = "El Email ha sido enviado con exito a $email";
+		}else{
+			$msg = "Ha ocurrido un error al enviar el email a $email";
+		}
+
+	}
+
+?>
+
 <html>
 	<head>
 		<meta charset="UTF-8">
 	</head>
 	<body>
 		<h1>Enviar email con PHP Mailer (Desde Server)</h1>
+		<strong><?php echo $msg; ?></strong>
 		<form method="POST" enctype="multipart/form-data" action="<?php echo $_SERVER["PHP_SELF"]?>">
 			<table>
 				<tr>
