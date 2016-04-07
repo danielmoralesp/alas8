@@ -26,7 +26,7 @@
 							  <tbody>
 
 								<tr>
-								  <td>Han Entrado al paso 1, Pilas! (prueba desde phpmailer)</td>
+								  <td>Han Entrado al paso 1, Pilas!</td>
 								  <td></td>
 
 								</tr>
@@ -45,11 +45,8 @@
 	
 	'
 	?>
-
-
 	
 	<?
-	/* EMAILS DE LA FORMA ANTERIOR, POR MEDIO D ELA FUNCION EMAIL()
 	
 	// Varios destinatarios
 					$para  = 'prueba@gmail.com' . ', '; // atención a la coma
@@ -74,34 +71,8 @@
 					// Mail it
 					mail($para, $titulo, $mensaje, $cabeceras);
 	
-	*/
-	?>
 
-
-
-	<?php
-
-	//EMAILS DE LA NUEVA FORMA, POR MEDIO DE PHPMAILER
-		$msg = null;
-			$nombre = 'Daniel Morales';
-			$email = 'danielmorales1202@gmail.com';
-			$subject = 'Entraron al Paso 1';
-			$mensaje = $paso1;
-
-			require "emails/php-mailer/class.phpmailer.php";
-
-			$mail = new PHPMailer;
-			$mail -> Host = "localhost"; //Para proveedores externos, inidicar el mismo aqui. 
-			$mail -> From = "inquietudes@alas8.com";
-			$mail -> FromName = "Alas8.com";
-			$mail -> Subject = $subject;
-			$mail -> addAddress($email, $nombre);
-			$mail -> MsgHTML($mensaje);
-
-
-	?>
-
-
+?>
 
 <!DOCTYPE html>
 <!--[if IE 8]> <html lang="en" class="ie8"> <![endif]-->  
