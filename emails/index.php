@@ -4,7 +4,7 @@
 		$nombre = htmlspecialchars($_POST["nombre"]);
 		$email = htmlspecialchars($_POST["email"]);
 		$asunto = htmlspecialchars($_POST["asunto"]);
-		$mensaje = $_POST["asunto"];
+		$mensaje = $_POST["mensaje"];
 		$adjunto = $_FILES["adjunto"];
 
 		require "php-mailer/class.phpmailer.php";
