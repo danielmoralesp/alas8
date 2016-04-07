@@ -77,7 +77,11 @@
 	*/
 	?>
 
+
+
 	<?php
+
+	//EMAILS DE LA NUEVA FORMA, POR MEDIO DE PHPMAILER
 		$msg = null;
 			$nombre = 'Daniel Morales';
 			$email = 'danielmorales1202@gmail.com';
@@ -93,12 +97,6 @@
 			$mail -> Subject = $subject;
 			$mail -> addAddress($email, $nombre);
 			$mail -> MsgHTML($mensaje);
-
-			if($mail -> Send()){
-				$msg = "El Email ha sido enviado con exito a $email";
-			}else{
-				$msg = "Ha ocurrido un error al enviar el email a $email";
-			}
 
 	?>
 
