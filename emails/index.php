@@ -13,7 +13,7 @@
 		$mail -> Host = "localhost"; //Para proveedores externos, inidicar el mismo aqui. 
 		$mail -> From = "danielmorales@floresymas.com";
 		$mail -> FromName = "FloresyMas";
-		$mail -> Subjet = $asunto;
+		$mail -> Subject = $asunto;
 		$mail -> addAddress($email, $nombre);
 		$mail -> MsgHTML($mensaje);
 
