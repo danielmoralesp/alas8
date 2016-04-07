@@ -89,16 +89,13 @@
 			//$mensaje = $paso1;
 			//$mensaje = "<a href='http://test.alas8.com/emails/Notify/Templates/HTML/Notify1/'>";
 			//$mensaje = file_get_contents('http://test.alas8.com/emails/Notify/Templates/HTML/Notify1/');
-
+			$mensaje = $mail->getFile('http://test.alas8.com/emails/Notify/Templates/HTML/Notify1/');
+			$mensaje = eregi_replace("[\]",'',$mensaje);
 
 
 			require "emails/php-mailer/class.phpmailer.php";
 
 			$mail = new PHPMailer;
-
-			$mensaje = $mail->getFile('http://test.alas8.com/emails/Notify/Templates/HTML/Notify1/');
-			$mensaje = eregi_replace("[\]",'',$mensaje);
-
 			$mail -> Host = "localhost"; //Para proveedores externos, inidicar el mismo aqui. 
 			$mail -> From = "inquietudes@alas8.com";
 			$mail -> FromName = "Alas8.com";
