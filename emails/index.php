@@ -3,7 +3,7 @@
 		<meta charset="UTF-8">
 	</head>
 	<body>
-		<h1>Enviar email con PHP Mailer</h1>
+		<h1>Enviar email con PHP Mailer (Desde Server)</h1>
 		<form method="POST" enctype="multipart/form-data" action="<?php echo $_SERVER["PHP_SELF"]?>">
 			<table>
 				<tr>
