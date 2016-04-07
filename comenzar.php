@@ -26,7 +26,7 @@
 							  <tbody>
 
 								<tr>
-								  <td>Han Entrado al paso 1, Pilas!</td>
+								  <td>Han Entrado al paso 1, Pilas! (prueba desde phpmailer)</td>
 								  <td></td>
 
 								</tr>
