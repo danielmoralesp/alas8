@@ -11,7 +11,7 @@
 		<meta name="viewport" content="width=device-width; initial-scale=1.0; maximum-scale=1.0;">
 		<title>Notify Prueba</title>
 		';
-		require_once("eamils/Notify/Templates/HTML/Notify1/style.html");
+		require_once("emails/Notify/Templates/HTML/Notify1/style.html");
 		$paso1.='
 
 
