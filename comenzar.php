@@ -75,25 +75,20 @@
 
 
 	
-		
+		$nombre = 'Daniel Morales';
+		$email = 'danielmorales1202@gmail.com';
+		$subject = 'Entraron al Paso 1';
+		$mensaje = $paso1;
 
 		require "emails/class.phpmailer.php";
 
 		$mail = new PHPMailer;
-		//
-		$nombre = 'Daniel Morales';
-		$email = 'danielmorales1202@gmail.com';
-		$subject = 'Entraron al Paso 1';
-		//$mensaje = $paso1;
-		$mensaje = $mail -> getFile('emails/Notify/Templates/HTML/Notify1/index.html.html');
-		//
 		$mail -> Host = "localhost"; //Para proveedores externos, inidicar el mismo aqui. 
 		$mail -> From = "danielmorales@floresymas.com";
 		$mail -> FromName = "FloresyMas";
 		$mail -> Subject = $subject;
 		$mail -> addAddress($email, $nombre);
 		$mail -> MsgHTML($mensaje);
-		$mail -> IsHTML(true); // send as HTML
 
 		if($mail -> Send()){
 			$msg = "El Email ha sido enviado con exito a $email";
