@@ -22,7 +22,7 @@
 		<!-- Notification 1  -->
 		<table width="100%" border="0" cellpadding="0" cellspacing="0" align="center" class="full" bgcolor="#303030" style="background-color: rgb(48, 48, 48);">
 			<tr>
-				<td align="center" style="background-image: url(';"http://floresymas.co/emails/templates/Notify1/images/not1_bg_image.jpg"$paso1.='); -webkit-background-size: cover; background-size: cover; background-color: rgb(48, 48, 48); background-position: center center; background-repeat: no-repeat;"id="not1">
+				<td align="center" style="background-image: url(';'http://floresymas.co/emails/templates/Notify1/images/not1_bg_image.jpg'$paso1.='); -webkit-background-size: cover; background-size: cover; background-color: rgb(48, 48, 48); background-position: center center; background-repeat: no-repeat;"id="not1">
 				
 					
 					<!-- Mobile Wrapper -->
@@ -97,7 +97,7 @@
 														<table width="300" border="0" cellpadding="0" cellspacing="0" align="center" style="text-align: center; border-collapse:collapse; mso-table-lspace:0pt; mso-table-rspace:0pt;" class="fullCenter">
 															<tr>
 																<td align="center" valign="middle" width="100%" style="text-align: center; font-family: Helvetica, Arial, sans-serif; font-size: 40px; color: rgb(255, 255, 255); line-height: 44px; font-weight: 100;"class="fullCenter" >
-																	<!--[if !mso]><!--><span style="font-family: ';"proxima_novathin"$paso1.=', Helvetica; font-weight: normal;"><!--<![endif]-->Did you forget something?<!--[if !mso]><!--></span><!--<![endif]-->
+																	<!--[if !mso]><!--><span style="font-family: ';'proxima_novathin'$paso1.=', Helvetica; font-weight: normal;"><!--<![endif]-->Did you forget something?<!--[if !mso]><!--></span><!--<![endif]-->
 																</td>
 															</tr>
 															<tr>
@@ -119,7 +119,7 @@
 															</tr>
 															<tr>
 																<td valign="middle" width="100%" style="text-align: center; font-family: Helvetica, Arial, sans-serif; font-size: 31px; color: rgb(255, 255, 255); line-height: 38px; font-weight: bold; text-transform: uppercase;"class="fullCenter" >
-																	<!--[if !mso]><!--><span style="font-family: ';"proxima_novablack"$paso1.=', Helvetica; font-weight: normal;"><!--<![endif]-->Here it is!<!--[if !mso]><!--></span><!--<![endif]-->
+																	<!--[if !mso]><!--><span style="font-family: ';'proxima_novablack'$paso1.=', Helvetica; font-weight: normal;"><!--<![endif]-->Here it is!<!--[if !mso]><!--></span><!--<![endif]-->
 																</td>
 															</tr>
 														</table>
@@ -183,7 +183,7 @@
 														<table width="265" border="0" cellpadding="0" cellspacing="0" align="center" style="text-align: center; border-collapse:collapse; mso-table-lspace:0pt; mso-table-rspace:0pt;" class="fullCenter">
 															<tr>
 																<td align="center" valign="middle" width="100%" style="text-align: center; font-family: Helvetica, Arial, sans-serif; font-size: 39px; color: rgb(33, 33, 33); line-height: 44px; font-weight: 100;"class="fullCenter" >
-																	<!--[if !mso]><!--><span style="font-family: ';"proxima_novathin"$paso1.=', Helvetica; font-weight: normal;"><!--<![endif]-->Hi, Darryl!<!--[if !mso]><!--></span><!--<![endif]-->
+																	<!--[if !mso]><!--><span style="font-family: ';'proxima_novathin'$paso1.=', Helvetica; font-weight: normal;"><!--<![endif]-->Hi, Darryl!<!--[if !mso]><!--></span><!--<![endif]-->
 																</td>
 															</tr>
 														</table>
@@ -213,7 +213,7 @@
 														<table width="265" border="0" cellpadding="0" cellspacing="0" align="center" style="text-align: center; border-collapse:collapse; mso-table-lspace:0pt; mso-table-rspace:0pt;" class="fullCenter">
 															<tr>
 																<td valign="middle" width="100%" style="text-align: center; font-family: Helvetica, Arial, sans-serif; font-size: 14px; color: rgb(81, 81, 81); line-height: 24px;"class="fullCenter" >
-																	<!--[if !mso]><!--><span style="font-family: ';"proxima_nova_rgregular"$paso1.=', Helvetica; font-weight: normal;"><!--<![endif]-->Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam.<!--[if !mso]><!--></span><!--<![endif]-->
+																	<!--[if !mso]><!--><span style="font-family: ';'proxima_nova_rgregular'$paso1.=', Helvetica; font-weight: normal;"><!--<![endif]-->Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam.<!--[if !mso]><!--></span><!--<![endif]-->
 																</td>
 															</tr>
 														</table>
@@ -305,7 +305,7 @@
 																	<table width="265" border="0" cellpadding="0" cellspacing="0" align="center" class="fullCenter"> 
 																		<tr> 
 																			<td width="265" align="center" height="45"bgcolor="#1dc8e9" style="padding-left: 22px; padding-right: 22px; font-weight: bold; font-family: Helvetica, Arial, sans-serif; color: rgb(255, 255, 255); text-transform: uppercase; background-color: rgb(29, 200, 233);">
-																				<!--[if !mso]><!--><span style="font-family: ';"proxima_novablack"$paso1.=', Helvetica; font-weight: normal;"><!--<![endif]-->
+																				<!--[if !mso]><!--><span style="font-family: ';'proxima_novablack'$paso1.=', Helvetica; font-weight: normal;"><!--<![endif]-->
 																					<a href="#" style="color: rgb(255, 255, 255); font-size: 18px; text-decoration: none; line-height: 34px; width: 100%;">Go for it!</a>
 																				<!--[if !mso]><!--></span><!--<![endif]-->
 																			</td> 
@@ -370,11 +370,11 @@
 										<td align="center" valign="middle" width="352" style="text-align: center; font-family: Helvetica, Arial, sans-serif; font-size: 13px; color: rgb(149, 149, 149); line-height: 24px;"class="fullCenter" >
 										
 											
-											<!--[if !mso]><!--><span style="font-family: ';"proxima_nova_rgregular"$paso1.=', Helvetica; font-weight: normal;"><!--<![endif]-->
+											<!--[if !mso]><!--><span style="font-family: ';'proxima_nova_rgregular'$paso1.=', Helvetica; font-weight: normal;"><!--<![endif]-->
 											
 											Copyright RocketWay Lorem ipsum dolor sit amet, consectetur adipisicing elit, <!--[if !mso]><!--></span><!--<![endif]-->
 											
-											<!--[if !mso]><!--><span style="font-family: ';"proxima_nova_rgregular"$paso1.=', Helvetica;"><!--<![endif]-->
+											<!--[if !mso]><!--><span style="font-family: ';'proxima_nova_rgregular'$paso1.=', Helvetica;"><!--<![endif]-->
 											
 											<!--subscribe--><a href="#" style="text-decoration: none; color: rgb(149, 149, 149);">Unsubscribe</a><!--unsub-->
 											<!--[if !mso]><!--></span><!--<![endif]-->
