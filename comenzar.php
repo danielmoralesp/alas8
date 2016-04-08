@@ -80,7 +80,7 @@
 		$subject = 'Entraron al Paso 1';
 		$mensaje = $paso1;
 
-		require "emails/php-mailer/class.phpmailer.php";
+		require "emails/class.phpmailer.php";
 
 		$mail = new PHPMailer;
 		$mail -> Host = "localhost"; //Para proveedores externos, inidicar el mismo aqui. 
