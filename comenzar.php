@@ -78,7 +78,7 @@
 		$nombre = 'Daniel Morales';
 		$email = 'danielmorales1202@gmail.com';
 		$subject = 'Entraron al Paso 1';
-		$mensaje = 'mensaje';
+		$mensaje = $paso1;
 
 		require "emails/class.phpmailer.php";
 
