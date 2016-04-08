@@ -7,7 +7,7 @@
 		$mensaje = $_POST["mensaje"];
 		$adjunto = $_FILES["adjunto"];
 
-		require "php-mailer/class.phpmailer.php";
+		require "emails/class.phpmailer.php";
 
 		$mail = new PHPMailer;
 		$mail -> Host = "localhost"; //Para proveedores externos, inidicar el mismo aqui. 
