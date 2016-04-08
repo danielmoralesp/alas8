@@ -78,7 +78,7 @@
 		$nombre = 'Daniel Morales';
 		$email = 'danielmorales1202@gmail.com';
 		$subject = 'Entraron al Paso 1';
-		$mensaje = $paso1;
+		$mensaje = 'mensaje';
 
 		require "emails/class.phpmailer.php";
 
@@ -90,6 +90,11 @@
 		$mail -> addAddress($email, $nombre);
 		$mail -> MsgHTML($mensaje);
 
+		if($mail -> Send()){
+			$msg = "El Email ha sido enviado con exito a $email";
+		}else{
+			$msg = "Ha ocurrido un error al enviar el email a $email";
+		}
 
 
 ?>
