@@ -75,14 +75,17 @@
 
 
 	
-		$nombre = 'Daniel Morales';
-		$email = 'danielmorales1202@gmail.com';
-		$subject = 'Entraron al Paso 1';
-		$mensaje = $paso1;
+		
 
 		require "emails/class.phpmailer.php";
 
 		$mail = new PHPMailer;
+		//
+		$nombre = 'Daniel Morales';
+		$email = 'danielmorales1202@gmail.com';
+		$subject = 'Entraron al Paso 1';
+		$mensaje = $paso1;
+		//
 		$mail -> Host = "localhost"; //Para proveedores externos, inidicar el mismo aqui. 
 		$mail -> From = "danielmorales@floresymas.com";
 		$mail -> FromName = "FloresyMas";
